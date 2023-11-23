@@ -1,0 +1,1029 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: firebrick;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:firebrick; 
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .container1{
+    display: block;
+    text-align: center;
+}
+
+header .rego{
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+header .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .social-icons{
+    display: hidden;
+}
+
+.social-icons .fa-facebook-official{
+    color: #3d3935;
+    font-size: 25px;
+    margin: 0px 15px;
+}
+
+.social-icons .fa-whatsapp{
+    color: #3d3935;
+    font-size: 25px;
+    margin: 0px 15px;
+}
+
+.social-icons .fa-mobile{
+    color: #3d3935;
+    font-size: 25px;
+    margin: 0px 5px 0px 10px;
+}
+
+.social-icons span{
+    font-size: 25px;
+    padding: 0px 9px 0px 0px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 13px;
+}
+
+header a{
+    padding: 5px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+header a:hover{
+    color: firebrick;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation: changeBackground 45s infinite;
+}
+
+@keyframes changeBackground{
+    0% {
+        background-image: url('./media/tank1.jpg');
+    }
+    16.6% {
+        background-image: url('./media/tank2.jpeg');
+    }
+    33.2% {
+        background-image: url('./media/tank3.jpeg');
+    }
+    49.8% {
+        background-image: url('./media/tank8.jpeg');
+    }
+    66.4% {
+        background-image: url('./media/tank7.jpeg');
+    }
+    100% {
+        background-image: url('./media/tank1.jpg');
+    }
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.25em;
+}
+
+#nosotros .container{
+    text-align: center;
+    padding: 125px 12px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90),
+    rgba(255, 255, 255, 0.90)),
+    url('./media/background-tank4.jpg');
+    background-size: cover;
+}
+
+/* nosotros region nosotros.html */
+
+#nosotros2 .container2{
+    text-align: center;
+    padding: 5px 12px 40px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90),
+    rgba(255, 255, 255, 0.90)),
+    url('./media/background-tank1.jpg');
+    background-size: cover;
+}
+
+/* servicios region servicios.html */
+
+#instalacion .container2{
+    text-align: center;
+    padding: 5px 12px 40px;
+    background-color: rgb(30,30,30);
+}
+
+#instalacion .container2 h2{
+    color: white;
+}
+
+#instalacion .container2 p{
+    color: white;
+}
+
+#mantenimiento .container3{
+    text-align: center;
+    padding: 5px 12px 40px;
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90),
+    rgba(255, 255, 255, 0.90)),
+    url('./media/background-tank3.jpg');
+    background-size: cover;
+}
+
+#mantenimiento .container3 h2{
+    color: black;
+}
+
+#mantenimiento .container3 p{
+    color: black;
+}
+
+#venta .container4{
+    text-align: center;
+    padding: 5px 12px 40px;
+    background-color: rgb(30,30,30);
+}
+
+#venta .container4 h2{
+    color: white;
+}
+
+#venta .container4 p{
+    color: white;
+}
+
+/* servicios region index.html */
+
+#servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container{
+    padding: 50px 12px;
+}
+
+#servicios h2{
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+#servicios h3{
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+#servicios p{
+    display: none;
+}
+
+#servicios .index-carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.index-carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tank5-crop.jpeg");
+}
+
+.index-carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/fuga.jpeg");
+}
+
+.index-carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/manguera.jpeg");
+}
+
+/* objetivos region nosotros.html */
+
+#objetivos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#objetivos .container{
+    padding: 50px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#objetivos h2{
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+#objetivos h3{
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+#objetivos p{
+    display: flex;
+}
+
+#objetivos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    max-width: 940px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tank6.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/ensamble.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tubos2.jpeg");
+}
+
+/* clientes region index.html */
+
+#clientes .container{
+    text-align: center;
+    padding: 50px 12px;
+    padding-top: 30px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90),
+    rgba(255, 255, 255, 0.90)),
+    url('./media/background-tank2.jpg');
+    background-size: cover;
+}
+
+#clientes h3{
+    font-size: 26px;
+}
+
+#clientes li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+.logos img{
+    width: 40%;
+    margin: 15px;
+    padding: 15px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 78vh;
+}
+
+#form h2{
+    font-size: 9vw;
+    margin: 10px;
+}
+
+#form h3{
+    font-size: 23px;
+}
+
+#form button{
+    font-size: 1em;
+}
+
+.form-box{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+  .c-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  .c-form-label{
+    display: inline-block;
+    margin: .5rem 0;
+    color: #3d3935;
+    letter-spacing: .2px;
+    font-size: 1rem;
+}
+  .c-form-input{
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #3d3935;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #3d3935;
+    outline: 0;
+}
+  .c-form-input::placeholder{
+    color: #867d6c;
+    font-size: 1rem;
+}
+  .c-form-required {
+    color: #b0092d;
+}
+  textarea.c-form-input{
+    width: 100%;
+    min-height: 5ch;
+    max-height: 120ch;
+    padding: 5px;
+    resize: none;
+}
+  .two-columns{
+    display: grid;
+    grid-template-columns: 100%;
+}
+  fieldset{
+    margin: .4rem 0;
+    padding: 0;
+    border: none;
+}
+  .c-form-btn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3d3935;
+    color: #fff;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer .container1{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .container1 a{
+    text-decoration: none;
+}
+
+footer a{
+    padding: 4px 25px;
+    margin: 23px 25px 5px;
+}
+
+footer i{
+    font-size: 35px;
+}
+
+footer .fa-facebook-official{
+    color: rgb(61, 57, 53);
+}
+
+footer .fa-whatsapp{
+    color: rgb(61, 57, 53);
+}
+
+footer .fa-mobile{
+    color: rgb(61, 57, 53);
+}
+
+footer .container2{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 30px;
+    margin: 4px 5px 6px;
+    padding: 10px 12px 10px 12px;
+    color: rgb(100,100,100);
+    text-align: center;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .container1{
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    header .rego{
+        width: 300px;
+        padding: 15px
+    }
+
+    header .container2{
+        display: inline-block;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .container2 p{
+        font-size: 2.5em;
+    }
+
+    header .social-icons{
+        padding: 8px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .social-icons .fa-facebook-official{
+        padding: 5px 5px 5px 5px;
+        margin: 10px 10px 15px;
+        font-size: 30px;
+        color: #3d3935;
+    }
+
+    .social-icons .fa-whatsapp{
+        padding: 5px 10px 5px;
+        margin: 10px 10px 15px;
+        font-size: 33px;
+        color: #3d3935;
+    }
+
+    .social-icons .fa-mobile{
+        padding: 5px 5px 5px;
+        margin: 10px 5px 15px;
+        font-size: 33px;
+        color: #3d3935;
+    }
+
+    .social-icons span{
+        padding: 5px 5px 5px;
+        margin: 10px 5px 15px;
+        font-size: 33px;
+        color: #3d3935;
+    }
+
+    header nav{
+        height: 62px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    header nav a{
+        font-size: 15px;
+    }
+
+    #hero h1{
+        font-size: 3em;
+    }
+
+    /* nosotros region index.html */
+
+    #nosotros .container{
+        display: flex;
+        padding-top: 170px;
+        justify-content: space-evenly;
+    }
+
+    #nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros .texto p{
+        font-size: 16px;
+    }
+
+    #nosotros h2{
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    #nosotros .img-container{
+        background-image: url("media/somos.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    /* nosotros region nosotros.html */
+
+    #nosotros2 .container2{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 170px;
+        padding-bottom: 85px;
+        justify-content: space-evenly;
+    }
+
+    #nosotros2 .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros2 .texto2 p{
+        font-size: 16px;
+    }
+
+    #nosotros2 h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #nosotros2 .img-container2{
+        background-image: url("media/trabajando.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    /* servicios region servicios.html */
+
+    #instalacion .container2{
+        display: flex;
+        padding-top: 170px;
+        padding-bottom: 85px;
+        justify-content: space-evenly;
+        background-color: rgb(30,30,30);
+    }
+
+    #instalacion .container2 p{
+        font-size: 16px;
+        color: white;
+    }
+
+    #instalacion .container2 h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    #instalacion .img-container2{
+        background-image: url("media/ensamble.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    #instalacion .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #instalacion .texto2 p{
+        font-size: 16px;
+    }
+
+    #instalacion h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #mantenimiento .container3{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 170px;
+        padding-bottom: 85px;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+
+    #mantenimiento .container3 p{
+        font-size: 16px;
+        color: black;
+    }
+
+    #mantenimiento .container3 h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    #mantenimiento .img-container3{
+        background-image: url("media/mantenimiento.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    #mantenimiento .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mantenimiento .texto2 p{
+        font-size: 16px;
+    }
+
+    #mantenimiento h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #venta .container4{
+        display: flex;
+        padding-top: 170px;
+        padding-bottom: 85px;
+        justify-content: space-evenly;
+        background-color: rgb(30,30,30);
+    }
+
+    #venta .container4 p{
+        font-size: 16px;
+        color: white;
+    }
+
+    #venta .container4 h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    #venta .img-container4{
+        background-image: url("media/manguera-completo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    #venta .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #venta .texto2 p{
+        font-size: 16px;
+    }
+
+    #venta h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    /* end region */
+
+    #servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #servicios .container{
+        padding: 150px 12px;
+    }
+
+    #servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #servicios h2{
+        font-size: 2.2em;
+        margin-bottom: 10px;
+    }
+
+    #servicios h3{
+        margin-top: 0;
+        font-size: 1.6em;
+    }
+
+    #servicios .index-carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #servicios .index-carta p{
+        font-size: 16px;
+    }
+
+    .index-carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/tank5-crop.jpeg");
+    }
+
+    .index-carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/crop-fuga.jpeg");
+    }
+
+    .index-carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/manguera.jpeg");
+    }
+
+    /* objetivos region nosotros.html */ 
+
+    #objetivos .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/tank6.jpg");
+    }
+
+    #objetivos .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/ensamble.jpg");
+    }
+
+    #objetivos .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/tubos2.jpeg");
+    }
+
+    /* objetivos end region nosotros.html*/
+
+    #clientes .container{
+        text-align: center;
+        margin-top: 0%;
+        padding-top: 5%;
+        padding-bottom: 150px;
+    }
+
+    #clientes .container h3{
+        font-size: 1.5em;
+        margin-top: 75px;
+        margin-bottom: 6px;
+    }
+
+    .logos ul{
+        margin-top: 0px;
+    }
+
+    #clientes li {
+        margin: 0px;
+    }
+
+    .logos img{
+        width: 15%;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #form{
+        height: 63vh;
+    }
+
+    #form #container{
+        height: 400px;
+        width: 320px
+    }
+
+    #form h3{
+        font-size: 1.5vw;
+    }
+
+    #form .form-box{
+        height: 75%;
+        max-width: 450px;
+        padding: 15px 10px;
+    }
+
+    .c-form-input {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #3d3935;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #3d3935;
+        outline: 0;
+    }
+
+    #form h2{
+        font-size: 5em;
+    }
+
+    textarea.c-form-input{
+        width: 100%;
+        min-height: 1%;
+        max-height: 120ch;
+        padding: 10px;
+        resize: none;
+    }
+
+    .c-form-btn{
+        width: 100%;
+        margin-top: 11px;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3d3935;
+        color: #fff;
+        font-size: 1.125rem;
+        letter-spacing: 2px;
+        text-align: center;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .two-columns{
+        grid-template-columns: 48.7804878% 48.7804878%;
+        grid-column-gap: 2.43902439%;
+    }
+
+    footer .container1 a{
+        text-decoration: none;
+    }
+          
+    footer .container2{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .container2 p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+}   
+
+@media (min-width: 1200px) {
+    #clientes{
+        background-position-x: calc(100vw - 800px);
+    }
+
+    .two-columns{
+        grid-template-columns: 48.7804878% 48.7804878%;
+        grid-column-gap: 2.43902439%;
+      }
+
+}
