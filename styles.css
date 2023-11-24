@@ -376,6 +376,8 @@ header a:hover{
 }
 
 .logos img{
+    min-width: 150px;
+    max-width: 175px;
     width: 40%;
     margin: 15px;
     padding: 15px;
