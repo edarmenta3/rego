@@ -362,6 +362,10 @@ header a:hover{
     background-size: cover;
 }
 
+#clientes ul{
+    padding: 0px;
+}
+
 #clientes h3{
     font-size: 26px;
 }
